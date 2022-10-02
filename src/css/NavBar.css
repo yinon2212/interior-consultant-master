@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 auto 100px auto;
+}
+
+i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}

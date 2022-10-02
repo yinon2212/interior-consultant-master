@@ -1,0 +1,6 @@
+.navbar-items-container{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

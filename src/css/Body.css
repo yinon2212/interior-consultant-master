@@ -1,0 +1,32 @@
+.body{
+    margin: 100px auto 0 auto;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.body .left-cont .heading,
+.body .left-cont .text{
+    margin-bottom: 20px;
+}
+
+.body .left-cont .text{
+    width: 40%;
+}
+
+.body .right-cont .illustration{
+    height: 500px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.body .right-cont .person-card{
+    position: absolute;
+    bottom: -20%;
+    right: 100px;
+}
+

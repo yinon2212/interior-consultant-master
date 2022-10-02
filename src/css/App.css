@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html, body, #root{
+    width: 100%;
+    height: 100%;
+}
+
+#root{
+    background-color: rgb(17, 17, 17);
+    overflow-x: hidden;
+}
+
+
+#items-toggle, .label-open, .label-close{
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+
+@media screen and (max-width: 1300px){
+    /*NavBar*/
+    .navbar-items-container{
+        display: none;
+    }
+
+    .label-open{
+        display: block;
+    }
+
+
+    #items-toggle:checked ~ .navbar-items-container{
+        display: flex;
+        position: absolute;
+        z-index: 99;
+        background-color: rgb(17, 17, 17);
+        top: 0;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #items-toggle:checked ~ .navbar-items-container + .label-open{
+        display: none;
+    }
+
+    #items-toggle:checked ~ .navbar-items-container ~ .label-open + .label-close{
+        display: block;
+    }
+
+    .navbar-items-container .navbar-item{
+        margin-bottom: 50px;
+    }
+
+    /*Body*/
+    .body{
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body .left-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .body .right-cont .illustration{
+        position: static;
+        width: 100%;
+    }
+
+    .body .right-cont .person-card{
+        bottom: -200px;
+        right: 200px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    /*Body*/
+    .body{
+        margin-top: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .body .right-cont .person-card{
+        bottom: -200px;
+        right: 40px;
+    }
+}
