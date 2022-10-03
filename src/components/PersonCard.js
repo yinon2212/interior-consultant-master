@@ -23,7 +23,7 @@ const PersonCard = (props) => {
 
             </div>
             <Text 
-                        style="card-text bold large"
+                        style="card-text bold large ff2"
                         text={props.cardText}
                     />
         </div>

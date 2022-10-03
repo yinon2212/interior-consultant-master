@@ -24,5 +24,6 @@
 }
 
 .person-card .card-text{
-    width: 60%;
+    width: 100%;
+    font-size: 1.7rem;
 }
