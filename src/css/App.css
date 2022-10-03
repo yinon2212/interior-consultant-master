@@ -61,7 +61,7 @@ html, body, #root{
 
     /*Body*/
     .body{
-        margin-top: 10%;
+        margin-top: 30%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -73,6 +73,10 @@ html, body, #root{
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .body .left-cont .heading{
+        font-size: 3rem;
     }
 
     .body .right-cont .illustration{
